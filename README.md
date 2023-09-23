@@ -18,3 +18,8 @@
 
 ![__results___29_5](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/a4c6d40f-3462-419a-8175-44ebaa008509)
 
+
+![__results___29_3](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/a71dc689-9d6e-4e68-b4a5-2b81420f2210)
+
+
+![__results___29_4](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/8b6ee2f4-5617-4ca7-a6c7-735bc40cb45d)
