@@ -2,6 +2,18 @@
 
 ![arc-bike2](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/c8731a0a-795d-4a68-8e13-9039a9adbb50)
 
+# Data Analysis
+
+Finding details from data:
+
+1) There are 14 features with 8760 rows of data. <br>
+2) There are 4 categorical columns and 10 numerical columns. Columns ‘Date’, ‘Seasons’ and ‘Functioning Day’ are of 𝑜𝑏𝑗𝑒𝑐𝑡 data type. <br>
+3) Columns ‘Rented Bike Count’, ‘Hour’, ‘Humidity (%)' and ‘Visibility (10𝑚)' are of 𝑖𝑛𝑡64 numarical data type. <br>
+4) Columns ‘Temperature Temperature (℃)’, ‘Wind Speed (𝑚/𝑠)’, ‘Dew Point Temperature (℃)’,‘Solar Radiation (𝑀𝐽/𝑚2)’,‘Rainfall (𝑚𝑚)' and ‘Snowfall(𝑐𝑚) are of 𝑓𝑙𝑜𝑎𝑡64 numarical data type. <br>
+5) Not any null value present in any column .<br>
+6) Unique count : Seasons- 4 , Holiday- 2 , Functioning Day- 2
+
+
 # Data Viz.
 
 <img width="713" alt="__results___18_0" src="https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/e8f2b4c3-332d-4aba-85cb-91fbff0ab7d0">
