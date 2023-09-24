@@ -48,3 +48,55 @@ Finding details from data:
 Stacked Model - Train R-squared: 0.99<br>
 Stacked Model - Test R-squared: 0.91<br>
 Stacked Model - Test RMSE: 3.31
+
+
+
+```python
+
+from sklearn.ensemble import StackingRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score, mean_squared_error
+from math import sqrt
+
+# Split your data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Define the base models
+base_models = [
+    ('LinearRegression', LinearRegression()),
+    ('Lasso', Lasso()),
+    ('Ridge', Ridge()),
+    ('KNeighborsRegressor', neighbors.KNeighborsRegressor()),
+    ('SVR', SVR(kernel='rbf')),
+    ('DecisionTree', DecisionTreeRegressor(random_state=42)),
+    ('RandomForest', RandomForestRegressor(random_state=42)),
+    ('ExtraTreeRegressor', ExtraTreesRegressor(random_state=42)),
+    ('GradientBoostingRegressor', GradientBoostingRegressor(random_state=42)),
+    ('XGBRegressor', xgb.XGBRegressor(random_state=42)),
+    ('LightGBM', lightgbm.LGBMRegressor(num_leaves=41, n_estimators=200, random_state=42)),
+    ('MLPRegressor', MLPRegressor(activation='logistic', solver='sgd', learning_rate='adaptive', max_iter=1000, learning_rate_init=0.01, alpha=0.01))
+]
+
+# Define the meta-model (stacking regressor)
+meta_model = LinearRegression()
+
+# Create the stacking regressor
+stacked_model = StackingRegressor(estimators=base_models, final_estimator=meta_model)
+
+# Train the stacking model on the training data
+stacked_model.fit(X_train, y_train)
+
+# Make predictions using the stacked model
+stacked_train_predictions = stacked_model.predict(X_train)
+stacked_test_predictions = stacked_model.predict(X_test)
+
+# Calculate R-squared and RMSE for the stacked model
+train_r2 = r2_score(y_train, stacked_train_predictions)
+test_r2 = r2_score(y_test, stacked_test_predictions)
+test_rmse = sqrt(mean_squared_error(y_test, stacked_test_predictions))
+
+print(f"Stacked Model - Train R-squared: {train_r2:.2f}")
+print(f"Stacked Model - Test R-squared: {test_r2:.2f}")
+print(f"Stacked Model - Test RMSE: {test_rmse:.2f}")
+```
