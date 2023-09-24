@@ -35,3 +35,10 @@ Finding details from data:
 
 
 ![__results___29_4](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/8b6ee2f4-5617-4ca7-a6c7-735bc40cb45d)
+
+
+
+# The Metrics
+
+![formula-MAE-MSE-RMSE-RSquared](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/7da211ec-7ca8-4c91-9be8-4e36966a3324)
+
