@@ -42,3 +42,9 @@ Finding details from data:
 
 ![formula-MAE-MSE-RMSE-RSquared](https://github.com/UKVeteran/Seoul-Bike-Sharing-Demand-Prediction/assets/39216339/7da211ec-7ca8-4c91-9be8-4e36966a3324)
 
+
+# Stack'em Up
+
+Stacked Model - Train R-squared: 0.99
+Stacked Model - Test R-squared: 0.91
+Stacked Model - Test RMSE: 3.31
