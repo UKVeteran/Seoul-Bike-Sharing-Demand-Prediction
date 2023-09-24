@@ -10,7 +10,7 @@ Finding details from data:
 2) There are 4 categorical columns and 10 numerical columns. Columns ‘Date’, ‘Seasons’ and ‘Functioning Day’ are of 𝑜𝑏𝑗𝑒𝑐𝑡 data type. <br>
 3) Columns ‘Rented Bike Count’, ‘Hour’, ‘Humidity (%)' and ‘Visibility (10𝑚)' are of 𝑖𝑛𝑡64 numerical data type. <br>
 4) Columns ‘Temperature Temperature (℃)’, ‘Wind Speed (𝑚/𝑠)’, ‘Dew Point Temperature (℃)’,‘Solar Radiation (𝑀𝐽/𝑚2)’,‘Rainfall (𝑚𝑚)' and ‘Snowfall(𝑐𝑚) are of 𝑓𝑙𝑜𝑎𝑡64 numarical data type. <br>
-5) Not any null value present in any column .<br>
+5) Not any null value present in any column.<br>
 6) Unique count : Seasons- 4 , Holiday- 2 , Functioning Day- 2
 
 
@@ -45,6 +45,6 @@ Finding details from data:
 
 # Stack'em Up
 
-Stacked Model - Train R-squared: 0.99
-Stacked Model - Test R-squared: 0.91
+Stacked Model - Train R-squared: 0.99<br>
+Stacked Model - Test R-squared: 0.91<br>
 Stacked Model - Test RMSE: 3.31
